@@ -64,7 +64,7 @@ func concurrencyWithWaitGroupV1() {
 		wg.Wait()
 
 		if count == len(clubIds) {
-			doneChan <- true
+			close(doneChan)
 		}
 	}(&wg)
 
