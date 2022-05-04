@@ -12,6 +12,7 @@ type Club struct {
 }
 
 func Fetch(id int) (Club, error) {
+	// Simulate API call takes a second to complete.
 	time.Sleep(1 * time.Second)
 
 	switch id {
