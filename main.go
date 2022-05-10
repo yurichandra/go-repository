@@ -12,6 +12,8 @@ func main() {
 	withoutConcurrency()
 
 	concurrencyWithWaitGroupV1()
+
+	consumeClosedChan()
 }
 
 func withoutConcurrency() {
